@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Tres Trantham"]
   s.email       = ["tres@trestrantham.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{A Foursquare Venues API Wrapper}
+  s.description = %q{A Foursquare Venues API Wrapper}
 
   s.rubyforge_project = "foursquare_venues"
 
@@ -17,4 +17,5 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
+  s.licenses = ["MIT"]
 end
