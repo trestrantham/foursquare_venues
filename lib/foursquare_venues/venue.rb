@@ -59,8 +59,8 @@ module FoursquareVenues
     # return the url to the icon of the primary category
     # if no primary is available, then return a default icon
     def icon
-			#primary_category ? primary_category.icon : "https://foursquare.com/img/categories/none.png"
-			return "https://foursquare.com/img/categories/none.png"
+			primary_category ? primary_category.icon : "https://foursquare.com/img/categories/none.png"
+			# return "https://foursquare.com/img/categories/none.png"
     end
     
     def short_url
