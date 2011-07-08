@@ -58,9 +58,14 @@ module FoursquareVenues
     
     # return the url to the icon of the primary category
     # if no primary is available, then return a default icon
-    def icon
-			primary_category ? primary_category.icon : "https://foursquare.com/img/categories/none.png"
+		# optionally accepts a size to return 64px or 256px icon
+    def icon(size = '')
+			icon_url = primary_category ? primary_category.icon : "https://foursquare.com/img/categories/none.png"
 			# return "https://foursquare.com/img/categories/none.png"
+			if ['64','256'].include?(size)
+				icon_url = icon_url.split('.png').first + '_' + size + '.png'
+			end
+			icon_url
     end
     
     def short_url
