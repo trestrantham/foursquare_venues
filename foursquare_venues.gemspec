@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = FoursquareVenues::VERSION
   s.authors     = ["Tres Trantham"]
   s.email       = ["tres@trestrantham.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/trestrantham/foursquare_venues"
   s.summary     = %q{A Foursquare Venues API Wrapper}
   s.description = %q{A Foursquare Venues API Wrapper}
 
